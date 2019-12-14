@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1571737901 source:d:\c++\codeblock_project\otomat_basic\main.cpp
+	<iostream>
+	<list>
+	<string>
+	<iterator>
+	"otomatobj.h"
+	<vector>
+
+1571736829 d:\c++\codeblock_project\otomat_basic\otomatobj.h
+	<list>
+	<string>
+	"rule.h"
+	<iostream>
+	<vector>
+
+1571737349 d:\c++\codeblock_project\otomat_basic\rule.h
+	<list>
+	<string>
+	<vector>
+
+1571736644 source:d:\c++\codeblock_project\otomat_basic\otomatobj.cpp
+	"otomatobj.h"
+
+1571737331 source:d:\c++\codeblock_project\otomat_basic\rule.cpp
+	"rule.h"
+
+1576242426 source:d:\c++\otomat_basic\main.cpp
+	<iostream>
+	<list>
+	<string>
+	<iterator>
+	"otomatobj.h"
+	<vector>
+
+1576291072 d:\c++\otomat_basic\otomatobj.h
+	<list>
+	<string>
+	"rule.h"
+	<iostream>
+	<vector>
+
+1571737350 d:\c++\otomat_basic\rule.h
+	<list>
+	<string>
+	<vector>
+
+1576245249 source:d:\c++\otomat_basic\otomatobj.cpp
+	"otomatobj.h"
+
+1576235748 source:d:\c++\otomat_basic\rule.cpp
+	"rule.h"
+
