@@ -215,6 +215,19 @@ void otomatObj::minimum()
         m_result.push_back(row);
     }
 
+    //set cel have end is false
+    for (int i=0; i < m_new_alphabet.size() - 1; i++)
+    {
+        for (int j=i+1; j < m_new_alphabet.size(); j++)
+        {
+            for (int k=0; k < m_end.size(); k++)
+            {
+                if (m_new_alphabet[i] == m_end[k] || m_new_alphabet[j] == m_end[k])
+                    m_result[j][i] = false;
+            }
+        }
+    }
+
     compare(m_new_alphabet, m_result);
     vector<vector<bool> > old;
     while (old != m_result)
@@ -236,18 +249,6 @@ void otomatObj::minimum()
 
 void otomatObj::compare(vector<string> m_new_alphabet, vector<vector<bool> > &m_result)
 {
-    //set cel have end is false
-    for (int i=0; i < m_new_alphabet.size() - 1; i++)
-    {
-        for (int j=i+1; j < m_new_alphabet.size(); j++)
-        {
-            for (int k=0; k < m_end.size(); k++)
-            {
-                if (m_new_alphabet[i] == m_end[k] || m_new_alphabet[j] == m_end[k])
-                    m_result[j][i] = false;
-            }
-        }
-    }
 
     for (int i=0; i < m_new_alphabet.size() - 1; i++)
     {
