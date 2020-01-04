@@ -33,7 +33,7 @@
 	"otomatobj.h"
 	<vector>
 
-1576291072 d:\c++\otomat_basic\otomatobj.h
+1578139845 d:\c++\otomat_basic\otomatobj.h
 	<list>
 	<string>
 	"rule.h"
@@ -45,7 +45,7 @@
 	<string>
 	<vector>
 
-1576245249 source:d:\c++\otomat_basic\otomatobj.cpp
+1578140523 source:d:\c++\otomat_basic\otomatobj.cpp
 	"otomatobj.h"
 
 1576235748 source:d:\c++\otomat_basic\rule.cpp

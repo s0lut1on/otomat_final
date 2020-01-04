@@ -24,7 +24,7 @@ public:
     bool contain(vector<vector<string> > list, vector<string> input);
     bool compare(vector<string> a, vector<string> b);
     bool compare(vector<vector<bool> > a, vector<vector<bool> > b);
-    void compare(vector<string> m_new_alphabet, vector<vector<bool> > &m_result);
+    void update(vector<string> m_new_alphabet, vector<vector<bool> > &m_result);
     int getIndex(string input, vector<string> input_alphabet);
 
     void print(vector<string> input);

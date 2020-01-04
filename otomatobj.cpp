@@ -228,12 +228,12 @@ void otomatObj::minimum()
         }
     }
 
-    compare(m_new_alphabet, m_result);
+    update(m_new_alphabet, m_result);
     vector<vector<bool> > old;
     while (old != m_result)
     {
         old = m_result;
-        compare(m_new_alphabet, m_result);
+        update(m_new_alphabet, m_result);
     }
 
     cout << "-----------------------------------" << endl;
@@ -245,9 +245,20 @@ void otomatObj::minimum()
         }
         cout << endl;
     }
+
+    cout << "-----------------------------------" << endl;
+    for (int i=0; i<m_result.size() - 1; i++)
+    {
+        for (int j=i+1; j<m_result[i].size(); j++)
+        {
+            if (m_result[j][i])
+                cout << "Merge alphabet: " << m_new_alphabet[i] << "\t" << m_new_alphabet[j] << endl;
+        }
+        cout << endl;
+    }
 }
 
-void otomatObj::compare(vector<string> m_new_alphabet, vector<vector<bool> > &m_result)
+void otomatObj::update(vector<string> m_new_alphabet, vector<vector<bool> > &m_result)
 {
 
     for (int i=0; i < m_new_alphabet.size() - 1; i++)
